@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Iconos - Karate-Kit-lineal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- ESTILOS BÁSICOS PARA LA PÁGINA --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a202c;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        p {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 2rem;
+        }
+
+        code {
+            background-color: #e2e8f0;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+
+        /* --- ESTILOS PARA LA GRILLA DE ICONOS --- */
+        .icon-grid {
+            display: grid;
+            /* Crea columnas responsivas: se ajustarán entre 120px y 1fr */
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+            /* Espacio entre tarjetas */
+        }
+
+        .icon-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Estilo del icono dentro de la tarjeta */
+        .icon-card [class^="kit-"] {
+            font-size: 3rem;
+            /* Tamaño grande para el icono */
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo del texto (nombre de la clase) */
+        .icon-card span {
+            font-size: 0.8rem;
+            color: #718096;
+            word-break: break-all;
+            /* Evita que nombres largos rompan el layout */
+        }
+
+        /* Estilo para la confirmación de copiado */
+        .icon-card.copied {
+            position: relative;
+        }
+
+        .icon-card.copied::after {
+            content: '¡Copiado!';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2c5282;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Visor de Iconos: Karate-Kit-lineal</h1>
+        <p>
+            Haz clic sobre cualquier tarjeta para copiar el nombre de la clase CSS.
+        </p>
+
+        <div id="icon-grid" class="icon-grid">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lista de todas las clases de iconos
+            const iconClasses = [
+                "kit-lineal-100", "kit-lineal-101", "kit-lineal-102", "kit-lineal-103", "kit-lineal-104", "kit-lineal-105",
+                "kit-lineal-106", "kit-lineal-107", "kit-lineal-108", "kit-lineal-109", "kit-lineal-110", "kit-lineal-111",
+                "kit-lineal-112", "kit-lineal-113", "kit-lineal-114", "kit-lineal-115", "kit-lineal-116", "kit-lineal-117",
+                "kit-lineal-118", "kit-lineal-119", "kit-lineal-120", "kit-lineal-121", "kit-lineal-122", "kit-lineal-123",
+                "kit-lineal-124", "kit-lineal-125", "kit-lineal-126", "kit-lineal-127", "kit-lineal-128", "kit-lineal-129",
+                "kit-lineal-130", "kit-lineal-131", "kit-lineal-132", "kit-lineal-133", "kit-lineal-134", "kit-lineal-135",
+                "kit-lineal-137", "kit-lineal", "kit-lineal-0", "kit-lineal-1", "kit-lineal-2", "kit-lineal-3",
+                "kit-lineal-4", "kit-lineal-5", "kit-lineal-6", "kit-lineal-7", "kit-lineal-8", "kit-lineal-9",
+                "kit-lineal-10", "kit-lineal-11", "kit-lineal-12", "kit-lineal-13", "kit-lineal-14", "kit-lineal-15",
+                "kit-lineal-16", "kit-lineal-17", "kit-lineal-18", "kit-lineal-19", "kit-lineal-20", "kit-lineal-21",
+                "kit-lineal-22", "kit-lineal-23", "kit-lineal-24", "kit-lineal-25", "kit-lineal-26", "kit-lineal-27",
+                "kit-lineal-28", "kit-lineal-29", "kit-lineal-30", "kit-lineal-31", "kit-lineal-32", "kit-lineal-33",
+                "kit-lineal-34", "kit-lineal-35", "kit-lineal-36", "kit-lineal-37", "kit-lineal-38", "kit-lineal-39",
+                "kit-lineal-40", "kit-lineal-41", "kit-lineal-42", "kit-lineal-43", "kit-lineal-44", "kit-lineal-45",
+                "kit-lineal-46", "kit-lineal-47", "kit-lineal-48", "kit-lineal-49", "kit-lineal-50", "kit-lineal-51",
+                "kit-lineal-52", "kit-lineal-53", "kit-lineal-54", "kit-lineal-55", "kit-lineal-56", "kit-lineal-57",
+                "kit-lineal-58", "kit-lineal-59", "kit-lineal-60", "kit-lineal-61", "kit-lineal-62", "kit-lineal-63",
+                "kit-lineal-64", "kit-lineal-65", "kit-lineal-66", "kit-lineal-67", "kit-lineal-68", "kit-lineal-69",
+                "kit-lineal-70", "kit-lineal-71", "kit-lineal-72", "kit-lineal-73", "kit-lineal-74", "kit-lineal-75",
+                "kit-lineal-76", "kit-lineal-77", "kit-lineal-78", "kit-lineal-79", "kit-lineal-80", "kit-lineal-81",
+                "kit-lineal-82", "kit-lineal-83", "kit-lineal-84", "kit-lineal-85", "kit-lineal-86", "kit-lineal-87",
+                "kit-lineal-88", "kit-lineal-89", "kit-lineal-90", "kit-lineal-91", "kit-lineal-92", "kit-lineal-93",
+                "kit-lineal-94", "kit-lineal-95", "kit-lineal-96", "kit-lineal-97", "kit-lineal-98", "kit-lineal-99",
+                "kit-lineal-138", "kit-lineal-140", "kit-lineal-141", "kit-lineal-142", "kit-lineal-143", "kit-lineal-144",
+                "kit-lineal-145", "kit-lineal-146", "kit-lineal-147", "kit-lineal-148", "kit-lineal-149", "kit-lineal-150",
+                "kit-lineal-151", "kit-lineal-152", "kit-lineal-153", "kit-lineal-154", "kit-lineal-155", "kit-lineal-156",
+                "kit-lineal-157", "kit-lineal-158", "kit-lineal-159", "kit-lineal-160", "kit-lineal-161", "kit-lineal-162",
+                "kit-lineal-163", "kit-lineal-164", "kit-lineal-165", "kit-lineal-166", "kit-lineal-167", "kit-lineal-168",
+                "kit-lineal-169", "kit-lineal-171", "kit-lineal-172", "kit-lineal-173", "kit-lineal-174", "kit-lineal-175",
+                "kit-lineal-176", "kit-lineal-177", "kit-lineal-178", "kit-lineal-179", "kit-lineal-180", "kit-lineal-181",
+                "kit-lineal-182", "kit-lineal-183", "kit-lineal-184", "kit-lineal-185", "kit-lineal-187", "kit-lineal-188",
+                "kit-lineal-189"
+            ];
+
+            const grid = document.getElementById('icon-grid');
+
+            iconClasses.forEach(className => {
+                // Crear la tarjeta contenedora
+                const card = document.createElement('div');
+                card.classList.add('icon-card');
+
+                // Crear el elemento del icono
+                const iconElement = document.createElement('i');
+                iconElement.className = className;
+
+                // Crear el elemento para el nombre de la clase
+                const nameElement = document.createElement('span');
+                nameElement.textContent = className;
+
+                // Añadir el icono y el nombre a la tarjeta
+                card.appendChild(iconElement);
+                card.appendChild(nameElement);
+
+                // Funcionalidad para copiar al hacer clic
+                card.addEventListener('click', () => {
+                    navigator.clipboard.writeText(className).then(() => {
+                        card.classList.add('copied');
+                        setTimeout(() => {
+                            card.classList.remove('copied');
+                        }, 1000);
+                    });
+                });
+
+                // Añadir la tarjeta a la grilla
+                grid.appendChild(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
