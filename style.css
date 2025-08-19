@@ -1,0 +1,588 @@
+@font-face {
+  font-family: 'Karate-Kit-Lineal';
+  src:  url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.eot?n6o0of');
+  src:  url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.eot?n6o0of#iefix') format('embedded-opentype'),
+    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.ttf?n6o0of') format('truetype'),
+    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.woff?n6o0of') format('woff'),
+    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.svg?n6o0of#Karate-Kit-Lineal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="kit-"], [class*=" kit-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Karate-Kit-Lineal' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kit-Lineal-100:before {
+  content: "\e900";
+}
+.kit-Lineal-101:before {
+  content: "\e901";
+}
+.kit-Lineal-102:before {
+  content: "\e902";
+}
+.kit-Lineal-103:before {
+  content: "\e903";
+}
+.kit-Lineal-104:before {
+  content: "\e904";
+}
+.kit-Lineal-105:before {
+  content: "\e905";
+}
+.kit-Lineal-106:before {
+  content: "\e906";
+}
+.kit-Lineal-107:before {
+  content: "\e907";
+}
+.kit-Lineal-108:before {
+  content: "\e908";
+}
+.kit-Lineal-109:before {
+  content: "\e909";
+}
+.kit-Lineal-110:before {
+  content: "\e90a";
+}
+.kit-Lineal-111:before {
+  content: "\e90b";
+}
+.kit-Lineal-112:before {
+  content: "\e90c";
+}
+.kit-Lineal-113:before {
+  content: "\e90d";
+}
+.kit-Lineal-114:before {
+  content: "\e90e";
+}
+.kit-Lineal-115:before {
+  content: "\e90f";
+}
+.kit-Lineal-116:before {
+  content: "\e910";
+}
+.kit-Lineal-117:before {
+  content: "\e911";
+}
+.kit-Lineal-118:before {
+  content: "\e912";
+}
+.kit-Lineal-119:before {
+  content: "\e913";
+}
+.kit-Lineal-120:before {
+  content: "\e914";
+}
+.kit-Lineal-121:before {
+  content: "\e915";
+}
+.kit-Lineal-122:before {
+  content: "\e916";
+}
+.kit-Lineal-123:before {
+  content: "\e917";
+}
+.kit-Lineal-124:before {
+  content: "\e918";
+}
+.kit-Lineal-125:before {
+  content: "\e919";
+}
+.kit-Lineal-126:before {
+  content: "\e91a";
+}
+.kit-Lineal-127:before {
+  content: "\e91b";
+}
+.kit-Lineal-128:before {
+  content: "\e91c";
+}
+.kit-Lineal-129:before {
+  content: "\e91d";
+}
+.kit-Lineal-130:before {
+  content: "\e91e";
+}
+.kit-Lineal-131:before {
+  content: "\e91f";
+}
+.kit-Lineal-132:before {
+  content: "\e920";
+}
+.kit-Lineal-133:before {
+  content: "\e921";
+}
+.kit-Lineal-134:before {
+  content: "\e922";
+}
+.kit-Lineal-135:before {
+  content: "\e923";
+}
+.kit-Lineal-137:before {
+  content: "\e924";
+}
+.kit-Lineal:before {
+  content: "\e925";
+}
+.kit-Lineal-0:before {
+  content: "\e926";
+}
+.kit-Lineal-1:before {
+  content: "\e927";
+}
+.kit-Lineal-2:before {
+  content: "\e928";
+}
+.kit-Lineal-3:before {
+  content: "\e929";
+}
+.kit-Lineal-4:before {
+  content: "\e92a";
+}
+.kit-Lineal-5:before {
+  content: "\e92b";
+}
+.kit-Lineal-6:before {
+  content: "\e92c";
+}
+.kit-Lineal-7:before {
+  content: "\e92d";
+}
+.kit-Lineal-8:before {
+  content: "\e92e";
+}
+.kit-Lineal-9:before {
+  content: "\e92f";
+}
+.kit-Lineal-10:before {
+  content: "\e930";
+}
+.kit-Lineal-11:before {
+  content: "\e931";
+}
+.kit-Lineal-12:before {
+  content: "\e932";
+}
+.kit-Lineal-13:before {
+  content: "\e933";
+}
+.kit-Lineal-14:before {
+  content: "\e934";
+}
+.kit-Lineal-15:before {
+  content: "\e935";
+}
+.kit-Lineal-16:before {
+  content: "\e936";
+}
+.kit-Lineal-17:before {
+  content: "\e937";
+}
+.kit-Lineal-18:before {
+  content: "\e938";
+}
+.kit-Lineal-19:before {
+  content: "\e939";
+}
+.kit-Lineal-20:before {
+  content: "\e93a";
+}
+.kit-Lineal-21:before {
+  content: "\e93b";
+}
+.kit-Lineal-22:before {
+  content: "\e93c";
+}
+.kit-Lineal-23:before {
+  content: "\e93d";
+}
+.kit-Lineal-24:before {
+  content: "\e93e";
+}
+.kit-Lineal-25:before {
+  content: "\e93f";
+}
+.kit-Lineal-26:before {
+  content: "\e940";
+}
+.kit-Lineal-27:before {
+  content: "\e941";
+}
+.kit-Lineal-28:before {
+  content: "\e942";
+}
+.kit-Lineal-29:before {
+  content: "\e943";
+}
+.kit-Lineal-30:before {
+  content: "\e944";
+}
+.kit-Lineal-31:before {
+  content: "\e945";
+}
+.kit-Lineal-32:before {
+  content: "\e946";
+}
+.kit-Lineal-33:before {
+  content: "\e947";
+}
+.kit-Lineal-34:before {
+  content: "\e948";
+}
+.kit-Lineal-35:before {
+  content: "\e949";
+}
+.kit-Lineal-36:before {
+  content: "\e94a";
+}
+.kit-Lineal-37:before {
+  content: "\e94b";
+}
+.kit-Lineal-38:before {
+  content: "\e94c";
+}
+.kit-Lineal-39:before {
+  content: "\e94d";
+}
+.kit-Lineal-40:before {
+  content: "\e94e";
+}
+.kit-Lineal-41:before {
+  content: "\e94f";
+}
+.kit-Lineal-42:before {
+  content: "\e950";
+}
+.kit-Lineal-43:before {
+  content: "\e951";
+}
+.kit-Lineal-44:before {
+  content: "\e952";
+}
+.kit-Lineal-45:before {
+  content: "\e953";
+}
+.kit-Lineal-46:before {
+  content: "\e954";
+}
+.kit-Lineal-47:before {
+  content: "\e955";
+}
+.kit-Lineal-48:before {
+  content: "\e956";
+}
+.kit-Lineal-49:before {
+  content: "\e957";
+}
+.kit-Lineal-50:before {
+  content: "\e958";
+}
+.kit-Lineal-51:before {
+  content: "\e959";
+}
+.kit-Lineal-52:before {
+  content: "\e95a";
+}
+.kit-Lineal-53:before {
+  content: "\e95b";
+}
+.kit-Lineal-54:before {
+  content: "\e95c";
+}
+.kit-Lineal-55:before {
+  content: "\e95d";
+}
+.kit-Lineal-56:before {
+  content: "\e95e";
+}
+.kit-Lineal-57:before {
+  content: "\e95f";
+}
+.kit-Lineal-58:before {
+  content: "\e960";
+}
+.kit-Lineal-59:before {
+  content: "\e961";
+}
+.kit-Lineal-60:before {
+  content: "\e962";
+}
+.kit-Lineal-61:before {
+  content: "\e963";
+}
+.kit-Lineal-62:before {
+  content: "\e964";
+}
+.kit-Lineal-63:before {
+  content: "\e965";
+}
+.kit-Lineal-64:before {
+  content: "\e966";
+}
+.kit-Lineal-65:before {
+  content: "\e967";
+}
+.kit-Lineal-66:before {
+  content: "\e968";
+}
+.kit-Lineal-67:before {
+  content: "\e969";
+}
+.kit-Lineal-68:before {
+  content: "\e96a";
+}
+.kit-Lineal-69:before {
+  content: "\e96b";
+}
+.kit-Lineal-70:before {
+  content: "\e96c";
+}
+.kit-Lineal-71:before {
+  content: "\e96d";
+}
+.kit-Lineal-72:before {
+  content: "\e96e";
+}
+.kit-Lineal-73:before {
+  content: "\e96f";
+}
+.kit-Lineal-74:before {
+  content: "\e970";
+}
+.kit-Lineal-75:before {
+  content: "\e971";
+}
+.kit-Lineal-76:before {
+  content: "\e972";
+}
+.kit-Lineal-77:before {
+  content: "\e973";
+}
+.kit-Lineal-78:before {
+  content: "\e974";
+}
+.kit-Lineal-79:before {
+  content: "\e975";
+}
+.kit-Lineal-80:before {
+  content: "\e976";
+}
+.kit-Lineal-81:before {
+  content: "\e977";
+}
+.kit-Lineal-82:before {
+  content: "\e978";
+}
+.kit-Lineal-83:before {
+  content: "\e979";
+}
+.kit-Lineal-84:before {
+  content: "\e97a";
+}
+.kit-Lineal-85:before {
+  content: "\e97b";
+}
+.kit-Lineal-86:before {
+  content: "\e97c";
+}
+.kit-Lineal-87:before {
+  content: "\e97d";
+}
+.kit-Lineal-88:before {
+  content: "\e97e";
+}
+.kit-Lineal-89:before {
+  content: "\e97f";
+}
+.kit-Lineal-90:before {
+  content: "\e980";
+}
+.kit-Lineal-91:before {
+  content: "\e981";
+}
+.kit-Lineal-92:before {
+  content: "\e982";
+}
+.kit-Lineal-93:before {
+  content: "\e983";
+}
+.kit-Lineal-94:before {
+  content: "\e984";
+}
+.kit-Lineal-95:before {
+  content: "\e985";
+}
+.kit-Lineal-96:before {
+  content: "\e986";
+}
+.kit-Lineal-97:before {
+  content: "\e987";
+}
+.kit-Lineal-98:before {
+  content: "\e988";
+}
+.kit-Lineal-99:before {
+  content: "\e989";
+}
+.kit-Lineal-138:before {
+  content: "\e98a";
+}
+.kit-Lineal-140:before {
+  content: "\e98b";
+}
+.kit-Lineal-141:before {
+  content: "\e98c";
+}
+.kit-Lineal-142:before {
+  content: "\e98d";
+}
+.kit-Lineal-143:before {
+  content: "\e98e";
+}
+.kit-Lineal-144:before {
+  content: "\e98f";
+}
+.kit-Lineal-145:before {
+  content: "\e990";
+}
+.kit-Lineal-146:before {
+  content: "\e991";
+}
+.kit-Lineal-147:before {
+  content: "\e992";
+}
+.kit-Lineal-148:before {
+  content: "\e993";
+}
+.kit-Lineal-149:before {
+  content: "\e994";
+}
+.kit-Lineal-150:before {
+  content: "\e995";
+}
+.kit-Lineal-151:before {
+  content: "\e996";
+}
+.kit-Lineal-152:before {
+  content: "\e997";
+}
+.kit-Lineal-153:before {
+  content: "\e998";
+}
+.kit-Lineal-154:before {
+  content: "\e999";
+}
+.kit-Lineal-155:before {
+  content: "\e99a";
+}
+.kit-Lineal-156:before {
+  content: "\e99b";
+}
+.kit-Lineal-157:before {
+  content: "\e99c";
+}
+.kit-Lineal-158:before {
+  content: "\e99d";
+}
+.kit-Lineal-159:before {
+  content: "\e99e";
+}
+.kit-Lineal-160:before {
+  content: "\e99f";
+}
+.kit-Lineal-161:before {
+  content: "\e9a0";
+}
+.kit-Lineal-162:before {
+  content: "\e9a1";
+}
+.kit-Lineal-163:before {
+  content: "\e9a2";
+}
+.kit-Lineal-164:before {
+  content: "\e9a3";
+}
+.kit-Lineal-165:before {
+  content: "\e9a4";
+}
+.kit-Lineal-166:before {
+  content: "\e9a5";
+}
+.kit-Lineal-167:before {
+  content: "\e9a6";
+}
+.kit-Lineal-168:before {
+  content: "\e9a7";
+}
+.kit-Lineal-169:before {
+  content: "\e9a8";
+}
+.kit-Lineal-171:before {
+  content: "\e9a9";
+}
+.kit-Lineal-172:before {
+  content: "\e9aa";
+}
+.kit-Lineal-173:before {
+  content: "\e9ab";
+}
+.kit-Lineal-174:before {
+  content: "\e9ac";
+}
+.kit-Lineal-175:before {
+  content: "\e9ad";
+}
+.kit-Lineal-176:before {
+  content: "\e9ae";
+}
+.kit-Lineal-177:before {
+  content: "\e9af";
+}
+.kit-Lineal-178:before {
+  content: "\e9b0";
+}
+.kit-Lineal-179:before {
+  content: "\e9b1";
+}
+.kit-Lineal-180:before {
+  content: "\e9b2";
+}
+.kit-Lineal-181:before {
+  content: "\e9b3";
+}
+.kit-Lineal-182:before {
+  content: "\e9b4";
+}
+.kit-Lineal-183:before {
+  content: "\e9b5";
+}
+.kit-Lineal-184:before {
+  content: "\e9b6";
+}
+.kit-Lineal-185:before {
+  content: "\e9b7";
+}
+.kit-Lineal-187:before {
+  content: "\e9b8";
+}
+.kit-Lineal-188:before {
+  content: "\e9b9";
+}
+.kit-Lineal-189:before {
+  content: "\e9ba";
+}
