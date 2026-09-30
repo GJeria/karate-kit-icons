@@ -1,16 +1,14 @@
 @font-face {
   font-family: 'Karate-Kit-Lineal';
-  src:  url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.eot?n6o0of');
-  src:  url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.eot?n6o0of#iefix') format('embedded-opentype'),
-    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.ttf?n6o0of') format('truetype'),
-    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.woff?n6o0of') format('woff'),
-    url('https://gjeria.github.io/karate-kit-icons/fonts/Karate-Kit-Lineal.svg?n6o0of#Karate-Kit-Lineal') format('svg');
+  src: url('fonts/Karate-Kit-Lineal.woff') format('woff'),
+       url('fonts/Karate-Kit-Lineal.ttf') format('truetype'),
+       url('fonts/Karate-Kit-Lineal.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="kit-"], [class*=" kit-"] {
+[class^="kit-"], [class*=" kit-"], .kit {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Karate-Kit-Lineal' !important;
   speak: never;
